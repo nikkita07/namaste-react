@@ -8,11 +8,13 @@
 
 
 //creating element in react 
-<!-- <script>
+<!-- 
+<script>
     const heading = React.createElement("h1",{},"hello world");
     const root  = ReactDOM.createRoot(document.getElementById("root"));
     root.render(heading);
-</script> -->
+</script>
+ -->
 
 //nesting while creating element in react 
  <!--
@@ -25,4 +27,10 @@
 
 
 ############## LIBRARY VS FRAMEWORK ###############
-### 
+### Library :  predefined functions,classes that you use in your library. for ex: printf() in c.
+## not a software
+## Inversion of Control(IoC) : you call the library(in control)
+
+### Framework : It's main function is helping you build a particular kind of application
+## is a software
+## Inversion of Control(IoC) : Framework calls your code(the control is inverted)
