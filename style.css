@@ -1,0 +1,45 @@
+.header{
+    display:flex;
+    justify-content:space-between;
+    border:1px solid black;
+}
+ul{
+    display:flex;
+    margin-right:50px;
+   
+}
+ul > li{
+    padding:15px;
+    list-style-type:none;
+    
+}
+img{
+    height:100px;
+    width:150px;
+}
+.search{
+    margin-top:20px;
+}
+.res-container{
+    margin-top:40px;  
+    display:flex;
+    flex-wrap:wrap;
+   
+}
+.res-card>img{
+  height:auto;
+  width:190px;
+  padding:5px;
+ 
+}
+.res-card{
+   
+    height:auto;
+    width:200px;
+    padding:5px;
+    background-color:#f0f0f0;
+    margin:20px auto;
+}
+.res-card:hover{
+    border:2px solid black
+}

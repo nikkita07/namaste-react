@@ -1,5 +1,7 @@
 {
     "recommendations": [
+        "burkeholland.simple-react-snippets",
+        "msjsdiag.vscode-react-native",
         "esbenp.prettier-vscode"
     ]
 }

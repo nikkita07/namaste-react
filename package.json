@@ -1,8 +1,10 @@
 {
   "name": "namaste_react",
   "version": "1.0.0",
-  "main":"app.js",
+  "main": "app.js",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -25,6 +27,6 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.3.1"
   }
 }
