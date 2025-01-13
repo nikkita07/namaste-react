@@ -17,9 +17,22 @@ img{
     height:100px;
     width:150px;
 }
-.search{
+.filter{
     margin-top:20px;
+    margin-left:20px;
 }
+.filter-btn{
+    padding:15px;
+    background-color:green;
+    color:white;
+    border:none
+ 
+}
+.filter-btn:hover{
+    cursor: pointer;
+}
+
+
 .res-container{
     margin-top:40px;  
     display:flex;
