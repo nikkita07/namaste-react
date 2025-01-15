@@ -2,7 +2,7 @@ import RestaurantCard from "./RestaurantCard.js";
 // import resList from "../../utils/mockData.js";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer.js";
-
+import { Link } from "react-router";
 
 const Body =()=>{
    const [searchText , setSearchText] = useState("");
@@ -47,7 +47,7 @@ return (listOfRestaurants.length===0) ? <Shimmer/> : (
              <div className="res-container">
          {
             
-            filterSearch.map(restaurant => <RestaurantCard key={restaurant.info.id} resData={restaurant}/>)
+            filterSearch.map(restaurant => <Link key={restaurant.info.id}  to={"/restaurants/"+restaurant.info.id}><RestaurantCard  resData={restaurant}/></Link>)
             
          }
              </div>
