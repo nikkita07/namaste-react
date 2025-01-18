@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./component/Header.js";
 import Body from "./component/Body.js";
@@ -7,7 +7,19 @@ import About from "./component/About.js";
 import Contact from "./component/Contact.js";
 import Error from "./component/Error.js";
 import RestaurantMenu from "./component/RestaurantMenu.js";
+import Shimmer from "./component/Shimmer.js";
+// import Grocery from "./component/Grocery.js";
 
+//for better optimization:
+//chunking
+//code splitting
+//ddynamic buning 
+//lazy loading 
+//on demand loading
+
+//lazy is a function given by react as named export
+//suspense is a component in React
+const Grocery = lazy(()=> import("./component/Grocery.js"));
 const AppLayout = () => {
   return (
     <div className="app">
@@ -34,6 +46,10 @@ const appRouter = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+      {
+          path:"/grocery",
+          element:<Suspense fallback={<Shimmer/>}><Grocery/></Suspense>
+      }, 
       {
         //dynamic routing
         path:"/restaurants/:resId",
