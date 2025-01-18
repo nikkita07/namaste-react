@@ -3,12 +3,12 @@
     justify-content:space-between;
     border:1px solid black;
 }
-ul{
+.nav-ul{
     display:flex;
     margin-right:50px;
    
 }
-ul > li{
+.nav-ul > li{
     padding:15px;
     list-style-type:none;
     

@@ -2,6 +2,7 @@
     "recommendations": [
         "burkeholland.simple-react-snippets",
         "msjsdiag.vscode-react-native",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "bierner.emojisense"
     ]
 }

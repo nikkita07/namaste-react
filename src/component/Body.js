@@ -3,6 +3,7 @@ import RestaurantCard from "./RestaurantCard.js";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer.js";
 import { Link } from "react-router";
+import useOnlineStatus from "../../utils/useOnlineStatus.js";
 
 const Body =()=>{
    const [searchText , setSearchText] = useState("");
@@ -20,6 +21,10 @@ const Body =()=>{
     setListOfRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants );
     setFilterSearch(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
  };
+
+ const onlineStatus = useOnlineStatus();
+ if(onlineStatus === false)return <h1>Looks like you're offline! please check you connection</h1>;
+ 
  //known as CONDITIONAL RENDERING 
 return (listOfRestaurants.length===0) ? <Shimmer/> : (
         <div className="body">
