@@ -5,7 +5,7 @@ class UserClass extends React.Component {
 
   constructor(props){
     super(props); 
-    console.log(props);
+   //  console.log(props);
    
     this.state = {
  
@@ -25,7 +25,7 @@ class UserClass extends React.Component {
     this.setState({
         userInfo:json,
     })
-    console.log(json);
+   //  console.log(json);
  }
 
 
